@@ -40,7 +40,7 @@ app.use('/api/orders', orderRoutes);
 app.use('/api/bookings', bookingRoutes); // ✅ NEW
 
 // === Server Startup ===
-const PORT = process.env.PORT || 6500;
+const PORT = process.env.https://smarttechnicianassignshankar.netlify.app/;
 app.listen(PORT, () => {
-  console.log(`✅ Server is running on port ${PORT}`);
+  console.log(`✅ Server is running on port ${https://smarttechnicianassignshankar.netlify.app/}`);
 });
