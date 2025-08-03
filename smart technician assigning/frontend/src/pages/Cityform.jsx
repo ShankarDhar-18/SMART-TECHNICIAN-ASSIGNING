@@ -36,7 +36,7 @@ const Cityform = () => {
     data.append('image', image);
 
     try {
-      const res = await axios.post('http://localhost:6500/api/zones', data);
+      const res = await axios.post('https://smarttechnicianassignshankar.netlify.app/', data);
       console.log('Uploaded:', res.data);
       alert('Technician added successfully');
 

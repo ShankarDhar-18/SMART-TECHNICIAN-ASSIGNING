@@ -61,7 +61,7 @@ const Cart = () => {
     console.log("📤 Sending Order:", order);
 
     try {
-      const res = await axios.post('http://localhost:6500/api/orders', order);
+      const res = await axios.post('https://smarttechnicianassignshankar.netlify.app/', order);
       if (res?.data) {
         alert(`✅ Order placed successfully using ${mode === 'COD' ? 'Cash on Delivery' : 'Online Payment'}!\n📞 Owner phone no: 9674383094`);
         setCart([]);

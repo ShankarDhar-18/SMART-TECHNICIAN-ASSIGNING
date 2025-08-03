@@ -18,7 +18,7 @@ const Payment = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:6500/api/payments', {
+      await axios.post('https://smarttechnicianassignshankar.netlify.app/', {
         ...form,
         time: new Date().toISOString(),
       });
