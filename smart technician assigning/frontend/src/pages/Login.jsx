@@ -18,7 +18,7 @@ const Login = () => {
     }
 
     try {
-      const res = await axios.post('http://localhost:6500/api/auth/login', { email, password });
+      const res = await axios.post('https://smarttechnicianassignshankar.netlify.app/', { email, password });
       if (res.data.token) {
         const userInfo = res.data.user || { name: email };
         localStorage.setItem('token', res.data.token);
