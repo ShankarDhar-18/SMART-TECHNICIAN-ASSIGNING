@@ -24,7 +24,7 @@ const BookTechnician = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:6500/api/bookings', form);
+      const response = await axios.post('https://smarttechnicianassignshankar.netlify.app/', form);
       if (response.status === 200 || response.status === 201) {
         alert('✅ Booking successful!');
         setForm({
