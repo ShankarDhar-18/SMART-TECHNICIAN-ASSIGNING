@@ -9,7 +9,7 @@ const Register = () => {
   const hs = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:6500/api/auth/register', form);
+      await axios.post('https://smarttechnicianassignshankar.netlify.app/', form);
       alert('✅ Registration Successful');
     } catch (error) {
       console.error(error);
